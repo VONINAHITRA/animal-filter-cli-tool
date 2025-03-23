@@ -1,9 +1,9 @@
-
 /**
- * Represents a country containing a list of people.
- * Each country has a name and a list of Person objects.
+ * Represents a country with a name and a list of people.
+ * @class Country
+ * @param {string} name - The name of the country.
+ * @param {Array} people - A list of people in the country.
  */
-
 class Country {
        constructor(name, people) {
               this.name = name;

@@ -1,8 +1,9 @@
 /**
  * Represents a person who owns a list of animals.
- * Each person has a name and a list of Animal objects.
+ * @class Person
+ * @param {string} name - The name of the person.
+ * @param {Array<Animal>} animals - A list of animals owned by the person.
  */
-
 class Person {
        constructor(name, animals) {
               this.name = name;
