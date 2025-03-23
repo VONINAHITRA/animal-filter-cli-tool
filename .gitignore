@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Jest testing
+coverage/

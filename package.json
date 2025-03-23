@@ -3,10 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "animal",
+    "filter",
+    "cli",
+    "tool",
+    "javascript"
+  ],
+  "author": "VONINAHITRA CALVYN Lebonheur de Patrice",
   "license": "ISC",
-  "description": ""
+  "description": "A command-line tool for filtering animals by pattern, built with JavaScript and Jest for testing.",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
