@@ -1,2 +1,9 @@
+# Node modules
 node_modules/
-npm-debug.log
+
+# IDE settings
+.idea/
+.vscode/
+
+# Jest testing
+coverage/
