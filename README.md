@@ -1,14 +1,14 @@
 
-# Animal Filter CLI Tool 
+# Animal Filter CLI Tool 💻😊🚀
 
 This is a command-line tool developed in Node.js to filter and count animal data. The tool allows users to filter animals by name pattern and count the number of people and animals in a given dataset.
 
-## Features
+## Features 🌟
 
 - **Filter Animals**: Filters a list of animals based on a name pattern.
 - **Count Entities**: Counts the number of animals per person and people per country, appending the count to their names.
 
-## Project Structure
+## Project Structure 📂
 
 ANIMAL-FILTER-CLI-TOOL
 │── coverage/
@@ -45,7 +45,7 @@ ANIMAL-FILTER-CLI-TOOL
 │── README.md
 
 
-## Installation
+## Installation 🔧
 
 1. Clone the repository:
     ```bash
@@ -62,7 +62,7 @@ ANIMAL-FILTER-CLI-TOOL
     npm install
     ```
 
-## Usage
+## Usage 🚀
 
 ### 1. Filter Animals by Name Pattern
 
@@ -135,4 +135,30 @@ Example Output:
   }
 ]
 
-😊🚀
+### 2. Tests ✅
+
+Running Tests with Coverage
+
+```bash
+ npm test 
+```
+
+example Output:
+----------------------|---------|----------|---------|---------|-------------------
+File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------------------|---------|----------|---------|---------|-------------------
+All files             |   97.43 |    76.92 |     100 |   97.43 |
+ data                 |     100 |      100 |     100 |     100 |
+  data.js             |     100 |      100 |     100 |     100 |
+ src/controllers      |     100 |      100 |     100 |     100 |
+  AnimalController.js |     100 |      100 |     100 |     100 |
+ src/repositories     |     100 |      100 |     100 |     100 |
+  AnimalRepository.js |     100 |      100 |     100 |     100 |
+ src/services         |   95.23 |     62.5 |     100 |   95.23 | 47
+  AnimalService.js    |   95.23 |     62.5 |     100 |   95.23 | 47
+ src/utils            |     100 |      100 |     100 |     100 |
+  constante.js        |     100 |      100 |     100 |     100 |
+----------------------|---------|----------|---------|---------|-------------------
+
+💻😊🚀
+
