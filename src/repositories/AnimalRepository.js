@@ -6,7 +6,7 @@
  */
 
 const ERROR_INVALID_DATA = 'Data is either missing or malformed';
-const data = require('../../data/data.js');
+const datas = require('../../data/data.js');
 
 class AnimalRepository {
 
@@ -17,10 +17,10 @@ class AnimalRepository {
         * @throws {Error} Throws an error if the data is invalid
         */
        static getData() {
-              if (!data || !data.data || !Array.isArray(data.data)) {
+              if (!datas || !datas.data || !Array.isArray(datas.data)) {
                      throw new Error(ERROR_INVALID_DATA);
               }
-              return data.data;
+              return datas.data;
        }
 }
 
