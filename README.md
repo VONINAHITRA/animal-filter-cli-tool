@@ -1,5 +1,5 @@
 
-# Animal Filter CLI Tool
+# Animal Filter CLI Tool 
 
 This is a command-line tool developed in Node.js to filter and count animal data. The tool allows users to filter animals by name pattern and count the number of people and animals in a given dataset.
 
@@ -135,3 +135,4 @@ Example Output:
   }
 ]
 
+😊🚀
