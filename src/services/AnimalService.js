@@ -4,7 +4,7 @@
  */
 
 const AnimalRepository = require('../repositories/AnimalRepository');
-const { INVALID_DATA_FORMAT, ERROR_PATTERN_MUST_BE_STRING } = require('../utils/constante');
+const { INVALID_DATA_FORMAT, ERROR_PATTERN_MUST_BE_STRING } = require('../errors/errorMessages');
 
 class AnimalService {
 

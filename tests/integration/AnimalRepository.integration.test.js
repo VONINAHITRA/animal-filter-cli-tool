@@ -1,5 +1,6 @@
 const AnimalRepository = require('../../src/repositories/AnimalRepository');
 const data = require('../../data/data.js'); // Mock data
+const { ERROR_INVALID_FORMAT } = require('../../src/errors/errorMessages'); // Import the error messages
 
 jest.mock('../../data/data.js'); // Mock the data module
 
@@ -11,7 +12,10 @@ describe('AnimalRepository Integration Tests', () => {
                      { name: 'Dillauti', people: [{ name: 'Winifred Graham', animals: [{ name: 'Duck' }] }] },
               ];
 
-              data.data = mockData; // Set the mock data in the data module
+              // Set the mock data in the data module
+              data.data = mockData;
+
+              // Call the method and verify the correct output
               const result = AnimalRepository.getData();
 
               // Verify that the repository returns the correct data
@@ -19,12 +23,16 @@ describe('AnimalRepository Integration Tests', () => {
        });
 
        it('should throw an error if data is missing or malformed', () => {
-              // Simulate missing or malformed data
+              // Simulate missing or malformed data - null
               data.data = null;
-              expect(() => AnimalRepository.getData()).toThrowError('Data is either missing or malformed');
 
-              // Simulate invalid data format
+              // Expecting to throw an error with the specific message
+              expect(() => AnimalRepository.getData()).toThrowError(ERROR_INVALID_FORMAT);
+
+              // Simulate invalid data format - string
               data.data = 'invalid data';
-              expect(() => AnimalRepository.getData()).toThrowError('Data is either missing or malformed');
+
+              // Expecting to throw an error with the specific message
+              expect(() => AnimalRepository.getData()).toThrowError(ERROR_INVALID_FORMAT);
        });
 });

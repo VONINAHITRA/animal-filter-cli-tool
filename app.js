@@ -5,7 +5,8 @@
 
 
 const AnimalController = require('./src/controllers/AnimalController');
-const { ERROR_INVALID_COMMAND } = require('./src/utils/constante');
+const { ERROR_INVALID_COMMAND } = require('./src/errors/errorMessages');
+
 
 // Get command-line arguments
 const args = process.argv.slice(2);
@@ -26,5 +27,5 @@ if (pattern) {
 } else if (command === '--count') {
        AnimalController.handleCountRequest();
 } else {
-       console.log(ERROR_INVALID_COMMAND);
+       throw new Error(ERROR_INVALID_COMMAND);
 }
