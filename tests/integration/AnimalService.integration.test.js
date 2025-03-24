@@ -1,6 +1,6 @@
 const AnimalService = require('../../src/services/AnimalService');
 const AnimalRepository = require('../../src/repositories/AnimalRepository');
-const { ERROR_PATTERN_MUST_BE_STRING } = require('../../src/utils/constante');
+const { ERROR_PATTERN_MUST_BE_STRING } = require('../../src/errors/errorMessages');
 
 jest.mock('../../src/repositories/AnimalRepository'); // Mock the repository
 
